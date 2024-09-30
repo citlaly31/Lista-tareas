@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/citlaly31/Lista-tareas.git/static/css/main.5c0398e9.css",
+    "main.js": "/citlaly31/Lista-tareas.git/static/js/main.9aadee42.js",
+    "static/js/453.81f383cb.chunk.js": "/citlaly31/Lista-tareas.git/static/js/453.81f383cb.chunk.js",
+    "index.html": "/citlaly31/Lista-tareas.git/index.html",
+    "main.5c0398e9.css.map": "/citlaly31/Lista-tareas.git/static/css/main.5c0398e9.css.map",
+    "main.9aadee42.js.map": "/citlaly31/Lista-tareas.git/static/js/main.9aadee42.js.map",
+    "453.81f383cb.chunk.js.map": "/citlaly31/Lista-tareas.git/static/js/453.81f383cb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c0398e9.css",
+    "static/js/main.9aadee42.js"
+  ]
+}
