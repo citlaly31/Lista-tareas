@@ -1,38 +1,116 @@
-.App {
+/* Estilos Generales */
+body {
+  background-color: #f0f2f5;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background-color: #ffffff;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(212, 43, 43, 0.1);
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Estilo para la lista de tareas */
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.todo:hover {
+  background-color: #e9ecef;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* Estilos para botones */
+.todo button {
+  border: none;
+  padding: 6px 12px;
+  margin: 0 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo button:hover {
+  background-color: #e0e0e0;
+}
+
+.todo button.complete {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.todo button.complete:hover {
+  background-color: #218838;
+}
+
+.todo button.delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.todo button.delete:hover {
+  background-color: #c82333;
+}
+
+/* Estilos para el formulario */
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }
